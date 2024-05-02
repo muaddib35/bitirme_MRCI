@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Boş bırakabilirsiniz",
+    "value": 0
+  },
+  {
+    "name": "Tableti kır ya da ez",
+    "value": 1
+  },
+  {
+    "name": "Tableti/tozu çöz",
+    "value": 1
+  },
+  {
+    "name": "Bir defada çoklu birim (ör:2 tablet, 2 puf)",
+    "value": 1
+  },
+  {
+    "name": "Değişken dozlar (ör: 2-3 puf, 1-2 tablet)",
+    "value": 1
+  },
+  {
+    "name": "Belirtilen zamanda kullan (ör: sabah akşam saat 8'de)",
+    "value": 1
+  },
+  {
+    "name": "Yemekle ilişkili (ör: yemekten sonra, yemekten önce, yemekle birlikte",
+    "value": 1
+  },
+  {
+    "name": "Belirli bir sıvı ile alım",
+    "value": 1
+  },
+  {
+    "name": "Tarif edildiği gibi kullan",
+    "value": 2
+  },
+  {
+    "name": "Dozu kademeli azaltma/artırma",
+    "value": 2
+  },
+  {
+    "name": "Değişken dozlam (ör: sabah 1 akşam 2 tane alın, gün aşırı 1/2 tablet)",
+    "value": 2
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "title": "İlaç Tedavisi Karmaşıklığı Nedir?",
+    "content": "İlaç tedavisindeki karmaşıklık hakkında uzun yıllardır ilaç sayısına ve kullanılan doza bağlı olduğu görüşü hakimdir. 4 farklı ilacın 4 farklı dozaj formunda ve her birinin farklı talimatlar ile kullanılması ile 4 farklı ilacın farklı talimatlar olmaksızın kullanılması arasında ilaç tedavisi karmaşıklığı açısından anlamlı bir fark söz konusudur. Ancak güvenilir bir ölçek olmadığından bu iki tedavi rejimi benzer olarak görülmekteydi. 2004 yılında George ve arkadaşları tarafından tarafından geliştirilen ölçekle birlikte ilaç tedavisi karmaşıklığı hesaplanabilmektedir.",
+    "created_at": "26/04/2024"
+  },
+  {
+    "title": "İlaç Tedavisi Karmaşıklık Ölçeği Nedir?",
+    "content": "İlaç tedavisi karmaşıklık ölçeği 2004 yılında George ve arkadaşları tarafından geliştirilen validasyonu yapılmış bir değerlendirme ölçeğidir. Üç bölümden oluşan bu ölçek; farmakoterapinin karmaşıklığını ölçmek için kullanılmaktadır. A bölümü dozaj formlarını (ör: tablet, kapsül, göz damlası), B bölümü doz sıklığını (ör: günde bir sefer alınız, günde üç sefer alınız), C bölümü ise ek talimatların (ör: çözündürünüz, yemekle alım zamanı) olduğu bölümlerdir. Her bir bölüm içindeki seçeneğin kendine ait puanları vardır. Bölümler kendi içlerinde toplandıklarından sonra üç bölüm toplanarak toplam skor elde edilir.  Toplam 65 seçenek üzerinden puanlama yapılmaktadır. ",
+    "created_at": "27/04/2024"
+  },
+  {
+    "title": "İlaç Tedavisi Karmaşıklık Ölçeği Önemi",
+    "content": "Ölçek kullanılarak yapılan çalışmalar sonucunda skor ile birçok parametre arasında ilişkiler bulunmuştur. Farmakoterapi karmaşıklığını ölçmek için valide olan ilaç tedavi karmaşıklık ölçeği tedavi uyuncu hakkında bilgiler vermektedir. Yüksek İTKÖ skoru ilaç tedavisinin karmaşık olduğunu göstermektedir. Oral antihiperglisemikler üzerinde yapılan bir çalışmadan yüksek İTKÖ skoru ile hastaların tedaviye uyuncunun düşük olduğu ve yüksek HbA1c ile ilişkili olduğu bulunmuştur. İlaç tedavisi karmaşıklığının bir bileşeni olan ilaç sayısı yaşlı hastalarda advers ilaç reaksiyonları sonucunda hastaneye yatış için önemli bir nedendir.",
+    "created_at": "28/04/2024"
+  }
+  
+]

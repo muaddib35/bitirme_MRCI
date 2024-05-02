@@ -1,0 +1,103 @@
+[
+  
+  {
+    "name": "Boş bırakabilirsiniz",
+    "value": 0
+  },
+  {
+    "name": "Gerektiğinde",
+    "value": 0.5
+  },
+  {
+    "name": "Günde bir kez",
+    "value": 1
+  },
+  {
+    "name": "Gerektiğinde günde bir kez",
+    "value": 0.5
+  },
+  {
+    "name": "Günde iki kez",
+    "value": 2
+  },
+  {
+    "name": "Gerektiğinde günde iki kez",
+    "value": 1
+  },
+  {
+    "name": "Günde üç kez",
+    "value": 3
+  },
+  {
+    "name": "Gerektiğinde günde üç kez",
+    "value": 1.5
+  },
+  {
+    "name": "Günde dört kez",
+    "value": 4
+  },
+  {
+    "name": "Gerektiğinde günde dört kez",
+    "value": 2
+  },
+  {
+    "name": "12 saatte bir",
+    "value": 2.5
+  },
+  {
+    "name": "gerektiğinde 12 saatte bir",
+    "value": 1.5
+  },
+  {
+    "name": "8 saatte bir",
+    "value": 3.5
+  },
+  {
+    "name": " Gerektiğinde 8 saatte bir ",
+    "value": 2
+  },
+  {
+    "name": "6 saatte bir",
+    "value": 4.5
+  },
+  {
+    "name": "Gerektiğinde 6 saatte bir ",
+    "value": 2.5
+  },
+  {
+    "name": "Dört saatte bir",
+    "value": 6.5
+  },
+  {
+    "name": "Gerektiğinde Dört saatte bir prn",
+    "value": 3.5
+  },
+  {
+    "name": "İki saatte bir",
+    "value": 12.5
+  },
+  {
+    "name": "Gerektiğinde İki saatte bir prn",
+    "value": 6.5
+  },
+  {
+    "name": "İhtiyaç halinde oksijen",
+    "value": 1
+  },
+  {
+    "name": "Farklı günlerde,daha az sıklıkta",
+    "value": 2
+  },
+  {
+    "name": "Gerektiğinde oksijen",
+    "value": 1
+  },
+  {
+    "name": "Oksijen <15 saat",
+    "value": 2
+  },
+  {
+    "name": "Oksijen > 15 saat",
+    "value": 3
+  }
+]

@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../flask_deneme"
+		},
+		{
+			"path": "../mysite"
+		},
+		{
+			"path": "../django-project"
+		},
+		{
+			"path": "../DENEME1"
+		},
+		{
+			"path": "../deneme2"
+		}
+	],
+	"settings": {}
+}

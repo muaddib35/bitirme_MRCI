@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block title %}Hesaplama Aracı{% endblock %}
+
+{% block content %}
+    
+    <div class='container p-2 rounded-lg bg-gray-300 flex flex-col gap-4 my-8'>
+        <div class='flex flex-row gap-2 justify-center items-center'>
+            <label class=' text-nowrap	w-32' for="dosage_name">Dozaj Formu</label>
+            <select name="dosage_name" id="dosage_name" class="w-full rounded-lg p-4">
+                {% for dosage in dosage_names %}
+                <option value="{{ dosage.value }}">{{ dosage.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class='flex flex-row gap-2 justify-center items-center'>
+            <label class=' text-nowrap w-32' for="dose_frequency">Doz Sıklığı</label>
+            <select name="dose_frequency" id="dose_frequency" class="w-full rounded-lg p-4">
+                {% for frequency in dose_frequencies %}
+                <option value="{{ frequency.value }}">{{ frequency.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class='flex flex-row gap-2 justify-center items-center'>
+            <label class=' text-nowrap w-32' for="additional_instructions">İlave Talimatlar</label>
+            <select name="additional_instructions" id="additional_instructions" class="w-full rounded-lg p-4">
+                {% for instruction in additional_instructions %}
+                <option value="{{ instruction.value }}">{{ instruction.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="flex flex-row justify-end">
+                <button id="add_button" class="p-2 bg-green-600 rounded-lg text-white cursor-pointer ">İlave Et</button>
+        </div>
+
+    </div>
+
+    <div class="container p-4 rounded-lg bg-gray-300 flex flex-col gap-4 my-8">
+        <table class="table-auto w-full my-4">
+            <thead>
+                <tr class="bg-gray-200">
+                    <th class="px-4 py-2">#</th>
+                    <th class="px-4 py-2">Dozaj Adı</th>
+                    <th class="px-4 py-2">Doz Sıklığı</th>
+                    <th class="px-4 py-2">İlave Talimatlar</th>
+                    <th class="px-4 py-2">Puan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border px-4 py-2">Sütun Toplamları</td>
+                    <td id="total_dosage" class="border px-4 py-2">-</td>
+                    <td id="total_dose_frequency" class="border px-4 py-2">-</td>
+                    <td id="total_additional_instraction" class="border px-4 py-2">-</td>
+                    <td class="border px-4 py-2"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="flex flex-row justify-between">
+            <button id="clear_button" class="p-2 bg-red-600 rounded-lg text-white cursor-pointer">Temizle</button>
+            <div>Toplam Puan: <span id="total_score"></span></div>
+        </div>
+
+    </div>
+    
+
+{% endblock %}
+

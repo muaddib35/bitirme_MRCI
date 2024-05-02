@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>{% block title %}İlaç Rejimi Karmaşıklık İndeksi{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              default: "#FAF9F8", // Default color
+            },
+          },
+          container: {
+            center: true, // Container'ı merkezde hizala
+            padding: "1rem", // Her iki yandan 1rem padding
+            screens: {
+              sm: "640px",
+              md: "768px",
+              lg: "1008px", // lg ve daha büyük ekranlar için 1008px genişlik
+              xl: "1008px",
+              "2xl": "1008px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-gray-600">
+    <header class="w-full  top-0  justify-center items-center content-center">
+      <div class='w-ful py-8 bg-gray-300'>
+        <div class='text-center text-xl'>İlaç Rejimi Karmaşıklık İndeksi</div>
+      </div>
+      <ul class='flex flex-row justify-center gap-6 py-4 bg-gray-800'> 
+        <li class=''> <a href='/' class='text-white hover:bg-gray-600 p-3 rounded-md'>İlaç Rejimi Karmaşıklık İndeksi Hakkında Genel Bilgiler</a> </li>
+        <li class=''> <a href='/ilac-rejimi-indeksi-nedir' class='text-white hover:bg-gray-600 p-3 rounded-md'>İlaç Rejimi Karmaşıklık İndeksi Hakkında Güncel Çalışmalar</a> </li>
+        <li class=''> <a href='/rehber' class='text-white hover:bg-gray-600 p-3 rounded-md'>Hesaplama Aracı Kullanımı Hakkında</a> </li>
+        <li class=''> <a href='/calculator' class='text-white hover:bg-gray-600 p-3 rounded-md'>Hesaplama Aracı</a> </li>
+        
+      </ul>
+    </header>
+
+
+    <main class="container">{% block content %} {% endblock %}</main>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+
+  </body>
+</html>

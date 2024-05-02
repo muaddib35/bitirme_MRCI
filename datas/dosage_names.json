@@ -1,0 +1,118 @@
+[
+  {
+    "name": "Boş bırakabilirsiniz",
+    "value": 0
+  },
+  {
+    "name": "Kapsül, tablet",
+    "value": 1
+  },
+  {
+    "name": "Gargara",
+    "value": 2
+  },
+  {
+    "name": "Pastil, sakız",
+    "value": 2
+  },
+  {
+    "name": "Sıvılar",
+    "value": 2
+  },
+  {
+    "name": "Toz, granül",
+    "value": 2
+  },
+  {
+    "name": "Dilaltı tablet, sprey",
+    "value": 2
+  },
+  {
+    "name": "Krem, jel, merhem",
+    "value": 2
+  },
+  {
+    "name": "Solüsyonlar",
+    "value": 2
+  },
+  {
+    "name": "Zamk, macun",
+    "value": 3
+  },
+  {
+    "name": "Yama",
+    "value": 2
+  },
+  {
+    "name": "Sprey",
+    "value": 1
+  },
+  {
+    "name": "Kulak damlası, kremi, merhemi",
+    "value": 3
+  },
+  {
+    "name": "Göz damlası",
+    "value": 3
+  },
+  {
+    "name": "Göz jeli, merhemi",
+    "value": 3
+  },
+  {
+    "name": "Burun damlası, kremi, merhemi",
+    "value": 3
+  },
+  {
+    "name": "Burun spreyi",
+    "value": 2
+  },
+  {
+    "name": "Aerosol",
+    "value": 3
+  },
+  {
+    "name": "Ölçülü doz inhaler",
+    "value": 4
+  },
+  {
+    "name": "Nebül",
+    "value": 5
+  },
+  {
+    "name": "Oksijen",
+    "value": 3
+  },
+  {
+    "name": "Diğerleri",
+    "value": 3
+  },
+  {
+    "name": "Diyaliz",
+    "value": 5
+  },
+  {
+    "name": "Lavman",
+    "value": 2
+  },
+  {
+    "name": "Enjeksiyon/ hazır",
+    "value": 3
+  },
+  {
+    "name": "Enjeksiyon/ampul",
+    "value": 4
+  },
+  {
+    "name": "Pessari",
+    "value": 3
+  },
+  {
+    "name": "Supozituvar",
+    "value": 2
+  },
+  {
+    "name": "Vajinal krem",
+    "value": 2
+  }
+]

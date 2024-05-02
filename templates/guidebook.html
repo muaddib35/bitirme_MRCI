@@ -1,0 +1,57 @@
+{% extends "layout.html" %} {% block title %}Blog{% endblock %} {% block content
+  %}
+  
+  <div class="conrainer flex flex-col gap-8 my-8">
+    <div class='grid grid-cols-4 gap-4 bg-gray-200 p-2 rounded-xl'>
+      <div class='col-span-16 flex flex-col gap-8'>
+        <h1 class="text-xl">Kullanım Rehberi</h1>
+        <!-- Articles -->
+        {% for guide in guide_book %}
+  
+          <a href='{{article.url}}' target="_blank" class='cursor-poinder hover:bg-gray-100 bg-gray-200 flex flex-col gap-2 p-4  rounded-lg'>{{article.title}}</a>
+        {% endfor %}
+      </div>
+      <div class='col-span-4 bg-gray-100 p-6 rounded-lg'>
+        <h1 class='text-xl border-b border-black'> Hesaplama Aracının Kullanılması Hakkında Bilinmesi Gerekenler </h1>
+        <p>
+          1. Üç bölüm bulunan bir araçtır. Her bir ilaç için dozaj formu, doz sıklığı ve gerekirse ilave talimatlar kısmından uygun olan seçeneği seçiniz.
+        <p>
+          2.Seçim yapıldıktan sonra ilave et butonuna tıklanarak hesaplama gerçekleştirilir. İlave et butonuna her tıklandığında seçimleriniz sonucunda altta bir tablo oluşturulur. 
+        <p>
+          3. Bu tabloda her bir ilacın ayrı ayrı hesaplaması yapılır. Dozaj formlarının puanları, doz sıklığının puanları ve ilave talimatların puanları kendi içinde ayrı ayrı toplanarak tabloda yer alır. En sonda toplam skor karşımıza çıkar.
+        <p>
+          4. En altta yer alan temizle butonuyla bütün tablo temizlenir tekrar ilaç ekleme işlemine hazır hale gelir.
+
+        
+      <div class='col-span-8 bg-gray-100 p-2 rounded-lg'></div>
+      <h1 class='text-xl border-b border-black'>İlaç Karmaşıklık İndeksi için Hesaplama Aracının Kullanılması Hakkında Bilinmesi Gerekenler </h1>
+        </p>
+         1. Aynı ilacın farklı miktarlardaki formları mevcutsa (ör:5mg, 3mg) tek bir ilaç olarak tabloya ekleyiniz.
+        <p>
+         2. Doz seçiminde opsiyonel bir durum söz konusu ise mevcut en küçük doz sıklığı seçilir. Örnek olarak ventolin ölçülü doz inhaler günde 2-3 kez 1-2 puf denilirse tablodan 'ölçülü doz inhaler', 'çeşitli dozlam', 'günde iki kez' seçilmesi gerekmektedir.
+        <p>
+         3. Bazı durumlarda doz hesaplaması gerekebilir. Sabah 1 akşam 1 denildiğinde günde iki kez seçilmelidir.
+
+        </p>
+          4.Birden fazla dozlama talimatı varsa hepsi tabloya girilmelidir. Örnek olarak ventolin ölçülü doz inhaler günde iki kez iki puf ve gerektiğinde gibi bir kullanım şekli varsa tabloya 'ölçülü doz inhaler', 'bir defada çoklu birim', 'günde iki kez', 'gerektiğinde' seçenekleri girilmelidir.
+        </p>
+         5.Hiç eşleşen seçenek yoksa size en yakın seçeneği seçebilirsiniz.( ör: günde 6 kere alınması gereken bir doz sıklığını günde 4 saat arayla olarak seçebilirirsiniz.)
+        </p>
+        </p>
+        </p>
+        <p class=''>
+        <p>
+         
+        </p>
+        <p>
+         
+          </p>
+      </div>
+    </div>
+  
+  </div>
+  
+  {% endblock %}
+  
+    
+    

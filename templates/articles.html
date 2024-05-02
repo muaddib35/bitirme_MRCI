@@ -1,0 +1,29 @@
+{% extends "layout.html" %} {% block title %}Blog{% endblock %} {% block content
+%}
+
+<div class="conrainer flex flex-col gap-8 my-8">
+  <div class='grid grid-cols-12 gap-8 bg-gray-300 p-4 rounded-xl'>
+    <div class='col-span-4 flex flex-col gap-2'>
+      <h1 class="text-xl">Makaleler</h1>
+      <!-- Articles -->
+      {% for article in articles %}
+
+        <a href='{{article.url}}' target="_blank" class='cursor-poinder hover:bg-gray-100 bg-gray-200 flex flex-col gap-2 p-4  rounded-lg'>{{article.title}}</a>
+      {% endfor %}
+    </div>
+    <div class='col-span-8 bg-gray-100 p-2 rounded-lg'>
+      <h1 class='text-xl border-b border-black'>İlaç Rejimi Karmaşıklık İndeksi Hakkında Yapılan Çalışmalar</h1>
+      <p class=''>
+        Çalışma 1- Bu çalışmanın amacı 'İlaç Rejimi Karmaşıklık İndeksi'nin Türkçe versiyonunun geçerliliğini sağlamaktır. Bu validasyon çalışması eczaneye reçete yenilemek için gelen ilk 100 yaşlı hastanın reçeteleri üzerinde yapılmıştır.Reçetedeki ilaç sayısı ile toplam İlaç Rejimi Karmaşıklık İndeksi skorları arasında güçlü ve pozitif bir korelasyon (r = 0,930, p <0,001) belirlendi. Yaş, cinsiyet ve MRCI skorları arasında istatistiksel olarak anlamlı fark yoktu (p> 0,05). Bu sonuçlar MRCI'nin Türkçe versiyonunun yaşlı hastalarda güvenilir ve geçerli bir araç olduğunu göstermektedir.
+      <p>
+       
+      </p>
+      <p>
+       
+        </p>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}
