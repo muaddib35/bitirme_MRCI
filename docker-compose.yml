@@ -3,11 +3,33 @@ version: '3.8'
 
 services:
   mrci:
-    containername: mrci
+    container_name: mrci
     build: .
     ports:
-      - "5000:5000"
+      - 5000:5000
     volumes:
-      - .:/code 
+      - .:/code
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
     environment:
-      - FLASK_ENV=developement
+      - FLASK_ENV=development
+    networks:
+      - proxy
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.mrci.entrypoints=http"
+      - "traefik.http.routers.mrci.rule=Host(`xxx.xxx`)"
+      - "traefik.http.middlewares.mrci-https-redirect.redirectscheme.scheme=https"
+      - "traefik.http.routers.mrci.middlewares=mrci-https-redirect"
+      - "traefik.http.routers.mrci-secure.entrypoints=https"
+      - "traefik.http.routers.mrci-secure.rule=Host(`xxx`)"
+      - "traefik.http.routers.mrci-secure.tls=true"
+      - "traefik.http.routers.mrci-secure.service=mrci"
+      - "traefik.http.services.mrci.loadbalancer.server.port=5000"
+      - "traefik.docker.network=proxy"
+
+
+networks:
+  proxy:
+    external: true
