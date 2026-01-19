@@ -6,7 +6,7 @@ services:
     container_name: mrci
     build: .
     ports:
-      - 5000:5000
+      - 5002:5000
     volumes:
       - .:/code
     restart: unless-stopped

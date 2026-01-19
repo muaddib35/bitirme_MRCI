@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
   let totalDoseFrequencyValue = 0;
   let totalAdditionalInstractionValue = 0;
 
+  let drugList = []
+
 
   clearTable();
 
@@ -27,6 +29,14 @@ document.addEventListener("DOMContentLoaded", function () {
     let totalAdditionalInstractionElement = document.getElementById(
       "total_additional_instraction"
     );
+
+    drugList.push({
+      dosageName: document.getElementById("dosage_name").selectedOptions[0].text,
+      doseFrequency: document.getElementById("dose_frequency").selectedOptions[0].text,
+      additionalInstructions: document.getElementById("additional_instructions").selectedOptions[0].text
+    });
+
+    console.log(drugList)
 
     // Select kutularından değerleri al
     const dosageName =

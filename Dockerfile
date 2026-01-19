@@ -10,7 +10,7 @@ COPY /datas/ /code/datas/
 COPY /static/ /code/static/
 COPY /templates/ /code/templates/
 
-EXPOSE 5000
+EXPOSE 5002
 
 ENV FLASK_APP=app.py
 ENV FLASK_RUN_HOST=0.0.0.0
